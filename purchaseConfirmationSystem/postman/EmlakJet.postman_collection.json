@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "09c2ec86-156e-49d2-ad40-8e2f65ea4694",
+		"name": "EmlakJet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28843317"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/expert/createExpert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"kadir\",\r\n  \"lastName\": \"ozcamur\",\r\n  \"mail\": \"kadirozcamur@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/expert/createExpert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"expert",
+						"createExpert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/invoice?approved=true",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/invoice?approved=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"invoice"
+					],
+					"query": [
+						{
+							"key": "approved",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/purchase/checkInvoice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"kadir\",\r\n  \"lastName\": \"ozcamur\",\r\n  \"mail\": \"kadir.ozcamur@gmail\",\r\n  \"amount\": 100,\r\n  \"productName\": \"mouse\",\r\n  \"billNo\": \"aaw2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/purchase/checkInvoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"purchase",
+						"checkInvoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
