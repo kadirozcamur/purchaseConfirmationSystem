@@ -1,7 +1,7 @@
 # purchaseConfirmationSystem
 emlakjet case
 
-Projeyi çalıştırmadan önce docker containerlarının ayağa kaldırılması gerekmektedir.
+Projeyi çalıştırmadan önce docker containerlarının ayağa kaldırılması gerekmektedir. Sonrasında maven clean ve install yapılmalıdır.
 
 Servisler çalıştırılırken öncelikle createExpert çalıştırılıp expert oluşturulur.
 Sonrasında bu experler için fatura girişi yapan checkInvoice servisi çalıştırılır.
