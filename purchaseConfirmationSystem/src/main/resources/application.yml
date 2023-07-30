@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: "purchaseConfirmationSystem"
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        default_schema: ${POSTGRES_SCHEMA:purchase}
+        format_sql: true
+    show-sql: true
+  datasource:
+    username: ${POSTGRES_USERNAME:super_admin}
+    password: ${POSTGRES_PASSWORD:SomeSecretPassword}
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/postgres}
+
+emlakjet:
+  invoice:
+    limitation: ${LIMIT:200}
