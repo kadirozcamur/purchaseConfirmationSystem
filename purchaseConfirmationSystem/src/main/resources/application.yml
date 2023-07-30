@@ -14,7 +14,10 @@ spring:
     username: ${POSTGRES_USERNAME:super_admin}
     password: ${POSTGRES_PASSWORD:SomeSecretPassword}
     url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/postgres}
-
+  redis:
+    url: redis://localhost:6379
 emlakjet:
   invoice:
     limitation: ${LIMIT:200}
+
+
